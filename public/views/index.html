@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src = "scripts/vendors/angular.min.js"></script>
+    <script src = "scripts/client.js"></script>
+</head>
+<body ng-controller="myController">
+<div class="col-md-2"></div>
+  <div id="strip" class="col-md-8">
+      <h1>US Election 2016: Who's Going To Win?</h1><br/>
+
+    <button class="loadCandidates" ng-click='candidates()'>Load the Candidates!</button>
+    <button class="chooseWinner" ng-click='choose()'>Select the Winner!</button><br/>
+
+    <div class="col-md-3">
+        <img src="./img/republicans.jpg" alt="elephant" height="200" width="200">
+    </div>
+    <div class="col-md-3">
+        <h3>Republican Candidates</h3>
+        <ul>
+            <li ng-repeat="person in repCandidates">{{person.Name}}</li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h3>Democrat Candidates</h3>
+        <ul>
+            <li ng-repeat="person in demCandidates">{{person.Name}}</li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <img src="./img/democrats.jpg" alt="donkey" height="200" width="200">
+    </div><br/>
+
+    <h2>Winner: {{winner}}</h2>
+  </div>
+<div class="col-md-2"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "republicans": [
+    {"Name": "Donald Trump"},
+    {"Name": "Ted Cruz"},
+    {"Name": "Marco Rubio"},
+    {"Name": "Jeb Bush"},
+    {"Name": "Carly Fiorina"}
+  ]
+}

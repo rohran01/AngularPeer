@@ -1,0 +1,9 @@
+{
+  "democrats": [
+    {"Name": "Hillary Clinton"},
+    {"Name": "Bernie Sanders"},
+    {"Name": "Martin O'Malley"},
+    {"Name": "Lincoln Chaffee"},
+    {"Name": "Jim Webb"}
+  ]
+}
